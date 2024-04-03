@@ -1,0 +1,88 @@
+*{
+    font-family: "Fira-Sans", serif;
+    font-weight: 400;
+}
+
+a, li, ul {
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+}
+
+
+
+
+
+
+
+
+/*HEADER-TOP*/
+
+.header-top{
+    display: flex;
+    margin: 20px 0;
+    justify-content: space-between;
+
+}
+
+.nav_list_top{
+    display: flex;
+    gap: 100px;
+    margin-right: 250px;
+}
+
+.icon-location{
+    position: absolute;
+    left: -30px;
+    top: 5px;
+
+}
+
+.icon-location img{
+    width: 20px;
+    height: 20px;
+}
+
+.info_header{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 120px;
+    width: 100%;
+    line-height: 1;
+    position: relative;
+}
+
+.nav_info_number a{
+    font-weight: 600;
+}
+
+.nav_info_city_grey{
+    color: #808B99;
+}
+
+.search_icon a img {
+    width: 24px;
+    height: 24px;
+}
+
+/*HEADER-DOWN*/
+
+.header-down-block{
+
+}
+
+.header-down{
+    display: flex;
+    background: linear-gradient(272deg, #093689 -18.74%, #2F80ED 111.87%);
+}
+
+.nav_list_down{
+    display: flex;
+    padding: 0;
+
+}
+
+
+
+
+
