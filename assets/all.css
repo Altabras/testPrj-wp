@@ -20,7 +20,7 @@ a, li, ul {
 
 .header-top{
     display: flex;
-    margin: 20px 0;
+    margin-top: 20px;
     justify-content: space-between;
 
 }
@@ -65,24 +65,64 @@ a, li, ul {
     height: 24px;
 }
 
-/*HEADER-DOWN*/
 
-.header-down-block{
+
+/*HEADER-DOWN*/
+.nav_block{
+    display: flex;
+    justify-content: space-between;
 
 }
 
 .header-down{
     display: flex;
     background: linear-gradient(272deg, #093689 -18.74%, #2F80ED 111.87%);
+    padding: 25px 0;
 }
 
-.nav_list_down{
+.nav_list_down {
     display: flex;
-    padding: 0;
+    padding-left: 0;
+    gap: 100px;
+    margin: 0;
+}
 
+.nav_item_down{
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFF;
+}
+
+.message_icon{
+    display: flex;
+    gap: 20px;
 }
 
 
+
+
+
+
+/*FOOTER*/
+
+
+.footer{
+    opacity: 0.9;
+    background: var(--dark, #093689);
+    padding: 78px 0;
+}
+
+
+.nav_footer_icon{
+    margin-top: 40px;
+}
+
+.nav_footer_icon ul{
+    display: flex;
+    gap:15px;
+    padding-left: 0;
+    
+}
 
 
 
