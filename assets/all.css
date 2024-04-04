@@ -112,6 +112,11 @@ a, li, ul {
     padding: 78px 0;
 }
 
+.left_footer_block{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
 
 .nav_footer_icon{
     margin-top: 40px;
@@ -124,5 +129,76 @@ a, li, ul {
     
 }
 
+.text_footer_logo{
+    color: #FFFFFF;
+    font-size: 10px;
+    font-weight: 300;
+    padding-top: 10px;
+}
+
+.adress_block{
+
+    display: flex;
+    color: #FFFFFF;
+    flex-direction: column;
+    gap: 40px;
+    align-items: end;
+}
+
+.adress_info_footer{
+    justify-content: end;
+    display: flex;
+    flex-direction: column;
+}
+
+.adress_info_grey{
+    color: #B3C3DF;
+}
+
+.number_info_footer{
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.nav_center_block {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+
+.main_center_foot{
+    padding-bottom: 20px;
+}
+.item_center_foot.main_center_foot a{
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.nav_center_footer{
+    padding-left: 0;
+}
+
+.item_center_foot a{
+    color: #B3C3DF;
+    font-size: 14px;
+}
+
+.footer_item_new{
+    border-radius: 2px;
+    background: var(--mid, #0071E4);
+    width: 38px;
+    text-align: center;
+    color: #FFFFFF;
+    position: absolute;
+    right: -20px;
+    top: 0;
+}
+
+.new_item{
+    position: relative;
+    font-size: 12px;
+}
 
 
