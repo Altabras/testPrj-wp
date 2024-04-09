@@ -1,5 +1,5 @@
 *{
-    font-family: "Fira-Sans", serif;
+    font-family: "Fira-Sans", sans-serif;
     font-weight: 400;
 }
 
@@ -102,7 +102,7 @@ a, li, ul {
 /*FOOTER*/
 
 
-.footer{
+.footer-down-block{
     opacity: 0.9;
     background: var(--dark, #093689);
     padding: 78px 0;
@@ -350,3 +350,128 @@ a, li, ul {
     padding: 17px 70px;
     color: #FFFFFF;
 }
+
+
+
+/*NEWS BLOCK*/
+
+
+.news_up{
+    position: relative;
+}
+.big_title_news{
+    color: var(--mid, #0071E4);
+    font-size: 90px;
+    font-weight: 800;
+    opacity: 0.05;
+    display: flex;
+    justify-content: center;
+}
+
+.small_title_news{
+    color: var(--dark, #093689);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 60px;
+}
+
+.text-title_news{
+    color: var(--Gray-2, #4F4F4F);
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 115%;
+    width: 70%;
+    margin: 55px auto 65px auto;
+}
+
+.news-btn-block{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 4px;
+    border: 1px solid var(--Gray-5, #E0E0E0);
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 37px;
+
+}
+
+.news-btn-block a{
+    padding: 10px 0;
+    color: var(--Gray-1, #333);
+    line-height: 120%;
+    text-align: center;
+}
+
+.btn-news-item{
+
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.btn-news-item:hover {
+    background: #2F80ED;
+    border-radius: 10px;
+    transform: scale(1.2);
+}
+
+.card-title{
+    color: var(--Gray-1, #333);
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.card-text{
+    font-size: 18px;
+}
+
+.card {
+    border: none;
+    box-shadow: 0px 12px 15px 0px rgba(0, 24, 69, 0.10);
+}
+
+.card-body-item{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    color: var(--Gray-3, #828282);
+    font-size: 18px;
+}
+
+.btn-card-block{
+    border-radius: 4px;
+    background: var(--mid, #0071E4);
+    max-width: 230px;
+    text-align: center;
+    padding: 18px 50px;
+    cursor: pointer;
+    margin: 58px auto 100px auto;
+
+}
+
+.btn-card-block a{
+    color: #FFFFFF;
+}
+
+.partners-block{
+    margin-bottom: 50px;
+}
+
+.partners-block .col-2{
+    text-align: center;
+    cursor: pointer;
+}
+
+.partners-block .col-2:hover{
+    transform: scale(1.2);
+    background: #FFFFFF;
+    box-shadow: 10px 5px 15px 5px rgba(0, 24, 69, 0.40);
+    padding: 10px;
+}
+
+
