@@ -67,23 +67,12 @@
 
     <div class="header-down">
         <div class="container nav_block">
-            <ul class="nav_list_down">
-                <a href="">
-                    <li class="nav_item_down">Продукция</li>
-                </a>
-                <a href="">
-                    <li class="nav_item_down">Покупателю</li>
-                </a>
-                <a href="">
-                    <li class="nav_item_down">Про нас</li>
-                </a>
-                <a href="">
-                    <li class="nav_item_down">Новости</li>
-                </a>
-                <a href="">
-                    <li class="nav_item_down">Контакты</li>
-                </a>
-            </ul>
+
+            <?php wp_nav_menu( array(
+                'theme_location' => 'header-menu',
+                'container_class' => 'nav_list_down' ) );
+            ?>
+
 
             <div class="message_icon">
                 <a href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/inst.svg" alt=""></a>

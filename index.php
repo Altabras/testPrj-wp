@@ -30,10 +30,9 @@
     <section class="our-info-block">
         <div class="container">
             <div class="info_up">
-                <div class="big_title">Почему выбирают нас</div>
-                <div class="small_title">Почему выбирают нас</div>
-                <div class="text-title">Идейные соображения высшего порядка, а также дальнейшее развитие различных форм
-                    деятельности позволяет оценить значение новых предложений.</div>
+                <div class="big_title"><?php the_field( 'benefits_title'); ?></div>
+                <div class="small_title"><?php the_field( 'benefits_title'); ?></div>
+                <div class="text-title"><?php the_field( 'benefits_description'); ?></div>
             </div>
 
             <div class="row our_info_nav text-center">
@@ -108,8 +107,11 @@
                         while ($query->have_posts()) : $query->the_post();
                             ?>
                             <div class="col">
+
                                 <div class="card h-100">
-                                    <img src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" class="card-img-top" alt="...">
+                                    <a href="<?php the_permalink(); ?>">
+                                         <img src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" class="card-img-top" alt="...">
+                                    </a>
                                     <div class="card-body">
                                         <div class="card-body-item">
                                             <div class="card_body_item-left"><?php the_category(', '); ?></div>
@@ -117,9 +119,11 @@
                                         </div>
 
                                         <div class="card-title"><?php the_title(); ?></div>
-                                        <div class="card-text"><?php the_content(); ?></div>
+                                        <div class="card-text"><?php the_excerpt(); ?></div>
                                     </div>
+
                                 </div>
+
                             </div>
                         <?php
                         endwhile;

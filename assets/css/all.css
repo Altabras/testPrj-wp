@@ -96,6 +96,21 @@ a, li, ul {
 
 
 
+#menu-header-menu {
+    display: flex;
+    padding-left: 0;
+    gap: 100px;
+    margin: 0;
+
+}
+
+
+.nav_list_down .menu-item a{
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFF;
+}
+
 
 
 
