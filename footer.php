@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col-6">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-5 others-questions-left">
                             <div class="question-title">Есть вопросы?</div>
                             <div class="question-text">Оставьте заявку
                                 и мы бесплатно
@@ -32,11 +32,32 @@
                 </div>
 
                 <div class="col-6">
-                    <form action=""></form>
+                    <div class="contact-form">
+                        <form action="#" method="post">
+                            <div class="form-name-email">
+                                <div class="form-group">
+
+                                    <input type="text" id="name" name="name" placeholder="Имя">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email" name="email" placeholder="Электронная почта:">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <textarea id="message" name="message" placeholder="Сообщение:"></textarea>
+                            </div>
+                            <div class="form-btn">
+                                <button type="submit" class="btn">Задать вопрос</button>
+                            </div>
+
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
 
 
 
@@ -45,7 +66,7 @@
             <div class="row">
                 <div class="col-lg-3 left_footer_block">
                     <div class="footer-logo">
-                        <a href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/modus_logo2.svg" alt=""></a>
+                        <a href=""><img src=<?php the_field( 'logo_footer', 'option'); ?> alt=""></a>
                     </div>
                     <div class="text_footer_logo">Более 20 лет является одним из крупнейших поставщиков качественной
                         дверной мебели в Украине
@@ -71,37 +92,30 @@
                     </div>
                 </div>
                 <div class="col-lg-6  nav_center_block">
-                    <ul class="nav_center_footer">
-                        <li class="item_center_foot main_center_foot"><a href="#">Продукция</a></li>
-                        <div class="new_item">
-                            <li class="item_center_foot"><a href="#">Каталоги
-                                    <div class="footer_item_new">new</div>
-                                </a></li>
-                        </div>
-                        <li class="item_center_foot"><a href="#">Сертификаты</a></li>
-                        <li class="item_center_foot"><a href="#">Бренды</a></li>
-                        <li class="item_center_foot"><a href="#">Гарантия</a></li>
-                        <li class="item_center_foot"><a href="#">Видео</a></li>
-                    </ul>
+                    <?php wp_nav_menu( array(
+                        'theme_location' => 'footer_1',
+                        'container_class' => 'nav_center_footer' ) );
+                    ?>
 
-                    <ul class="nav_center_footer">
-                        <li class="item_center_foot main_center_foot"><a href="#">Покупателю</a></li>
-                        <li class="item_center_foot"><a href="#">Сотрудничество</a></li>
-                        <li class="item_center_foot"><a href="#">Интернет склад</a></li>
-                        <li class="item_center_foot"><a href="#">Доставка</a></li>
-                    </ul>
+                    <?php wp_nav_menu( array(
+                        'theme_location' => 'footer_2',
+                        'container_class' => 'nav_center_footer' ) );
+                    ?>
 
-                    <ul class="nav_center_footer">
-                        <li class="item_center_foot main_center_foot"><a href="#">Про нас</a></li>
-                    </ul>
+                    <?php wp_nav_menu( array(
+                        'theme_location' => 'footer_3',
+                        'container_class' => 'nav_center_footer' ) );
+                    ?>
 
-                    <ul class="nav_center_footer">
-                        <li class="item_center_foot main_center_foot"><a href="#">Новости</a></li>
-                    </ul>
+                    <?php wp_nav_menu( array(
+                        'theme_location' => 'footer_4',
+                        'container_class' => 'nav_center_footer' ) );
+                    ?>
 
-                    <ul class="nav_center_footer">
-                        <li class="item_center_foot main_center_foot"><a href="#">Контакты</a></li>
-                    </ul>
+                    <?php wp_nav_menu( array(
+                        'theme_location' => 'footer_5',
+                        'container_class' => 'nav_center_footer' ) );
+                    ?>
 
                 </div>
                 <div class="col-lg-3 adress_block">
@@ -131,7 +145,7 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="assets/js/main.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

@@ -26,7 +26,7 @@
     <div class="container">
         <div class="header-top">
             <div class="header_logo">
-                <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/modus_logo.svg" alt=""></a>
+                <a href="/"><img src=<?php the_field( 'logo_header', 'option'); ?> alt=""></a>
             </div>
             <ul class="nav_list_top">
                 <li class="nav_item_top">
@@ -69,7 +69,7 @@
         <div class="container nav_block">
 
             <?php wp_nav_menu( array(
-                'theme_location' => 'header-menu',
+                'theme_location' => 'primary',
                 'container_class' => 'nav_list_down' ) );
             ?>
 

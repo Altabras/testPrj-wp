@@ -36,22 +36,21 @@
             </div>
 
             <div class="row our_info_nav text-center">
-                <div class="col-3 info_nav_item">
-                    <div class="info_nav_title">25 лет</div>
-                    <div class="info_nav_subtitle">На рынке Украины</div>
-                </div>
-                <div class="col-3 info_nav_item">
-                    <div class="info_nav_title">2500+</div>
-                    <div class="info_nav_subtitle">Довольных клиентов</div>
-                </div>
-                <div class="col-3 info_nav_item">
-                    <div class="info_nav_title">500+</div>
-                    <div class="info_nav_subtitle">Вариантов дизайна ручек</div>
-                </div>
-                <div class="col-3 info_nav_item">
-                    <div class="info_nav_title">3 года</div>
-                    <div class="info_nav_subtitle">Гарантии</div>
-                </div>
+
+            <?php
+
+            if( have_rows('benefits_repeater') ):
+                while ( have_rows('benefits_repeater') ) : the_row();
+                    ?>
+                    <div class="col-3 info_nav_item">
+                        <div class="info_nav_title"><?php echo get_sub_field('title');?></div>
+                        <div class="info_nav_subtitle"><?php echo get_sub_field('subtitle');?></div>
+                    </div>
+             <?php
+                endwhile;
+            endif;
+
+            ?>
             </div>
         </div>
 
@@ -114,7 +113,7 @@
                                     </a>
                                     <div class="card-body">
                                         <div class="card-body-item">
-                                            <div class="card_body_item-left"><?php the_category(', '); ?></div>
+                                            <div class="card_body_item-left"><?php the_category(','); ?></div>
                                             <div class="card-body_item-right"><?php the_time('j F, Y'); ?></div>
                                         </div>
 
@@ -145,17 +144,17 @@
         <div class="partners-block">
             <div class="container">
                 <div class="row">
-                    <div class="col-2"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/TERNO-SCORREVOLI-logo--300x300%201.png" alt=""></div>
-                    <div class="col-2"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/geze-320x430%201.png" alt=""></div>
-                    <div class="col-2"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo_s%20tagline%201.png" alt=""></div>
-                    <div class="col-2"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Linea%20Cali%201.png" alt=""></div>
-                    <div class="col-2"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Giusti%201.png" alt=""></div>
-                    <div class="col-2"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/geze-320x430%201.png" alt=""></div>
+                    <?php
+                    if( have_rows('partners') ):
+                        while ( have_rows('partners') ) : the_row();?>
+                            <div class="col-2"><img src="<?php echo get_sub_field('partners_img'); ?>" alt="#"></div>
+                       <?php endwhile;
+                    endif;
+                    ?>
                 </div>
             </div>
         </div>
     </section>
-
 </main>
 
 
