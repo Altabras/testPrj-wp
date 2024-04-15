@@ -97,25 +97,25 @@
                         'container_class' => 'nav_center_footer' ) );
                     ?>
 
-                    <?php wp_nav_menu( array(
-                        'theme_location' => 'footer_2',
-                        'container_class' => 'nav_center_footer' ) );
-                    ?>
-
-                    <?php wp_nav_menu( array(
-                        'theme_location' => 'footer_3',
-                        'container_class' => 'nav_center_footer' ) );
-                    ?>
-
-                    <?php wp_nav_menu( array(
-                        'theme_location' => 'footer_4',
-                        'container_class' => 'nav_center_footer' ) );
-                    ?>
-
-                    <?php wp_nav_menu( array(
-                        'theme_location' => 'footer_5',
-                        'container_class' => 'nav_center_footer' ) );
-                    ?>
+<!--                    --><?php //wp_nav_menu( array(
+//                        'theme_location' => 'footer_2',
+//                        'container_class' => 'nav_center_footer' ) );
+//                    ?>
+<!---->
+<!--                    --><?php //wp_nav_menu( array(
+//                        'theme_location' => 'footer_3',
+//                        'container_class' => 'nav_center_footer' ) );
+//                    ?>
+<!---->
+<!--                    --><?php //wp_nav_menu( array(
+//                        'theme_location' => 'footer_4',
+//                        'container_class' => 'nav_center_footer' ) );
+//                    ?>
+<!---->
+<!--                    --><?php //wp_nav_menu( array(
+//                        'theme_location' => 'footer_5',
+//                        'container_class' => 'nav_center_footer' ) );
+//                    ?>
 
                 </div>
                 <div class="col-lg-3 adress_block">

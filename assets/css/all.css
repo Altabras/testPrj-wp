@@ -290,6 +290,17 @@ a, li, ul {
     font-size: 12px;
 }
 
+#menu-footer_1{
+    display: flex;
+    gap: 50px;
+}
+
+.menu-item-has-children>a{
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
 
 
 /*SECTION SLIDER*/
@@ -582,4 +593,51 @@ a, li, ul {
 
 .card img {
     height: 200px;
+}
+
+
+/*Catalog Sidebar*/
+
+.catalog-blog{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: var(--light, #F0F4FA);
+}
+
+.sidebar {
+    width: 100%;
+    max-width: 250px;
+    background-color: #FFFFFF;
+    border-right: 1px solid #ececec;
+    box-shadow: 0px 12px 15px 0px rgba(0, 24, 69, 0.05);
+
+}
+
+.sidebar ul {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 25px 15px; /* отступы внутри каждого пункта */
+    border-bottom: 1px solid #ececec; /* граница между пунктами */
+}
+
+.sidebar ul li a {
+    font-size: 20px;
+    color: #333;
+    display: block; /* чтобы ссылка занимала весь блок пункта */
+}
+
+.sidebar ul li a:hover {
+    color: #2F80ED;
+    cursor: pointer; /* тип курсора при наведении */
+}
+
+.card-catalog-block .btn{
+    width: 100%;
+}
+
+.card-catalog-block{
+    margin-top: 50px;
 }
