@@ -8,6 +8,7 @@ if ( have_posts() ) :
     <div class="container">
         <div class="post-content">
             <h1 class="post-title"><?php the_title(); ?></h1>
+            <?php echo the_time('j F, Y');?>
             <?php the_content(); ?>
         </div>
     </div>
@@ -15,6 +16,7 @@ if ( have_posts() ) :
         <?php
 
 endwhile;
+
 endif;
 ?>
 

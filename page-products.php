@@ -1,10 +1,7 @@
 <?php
-/* Template Name: Сторінка Каталог*/
+/* Template Name: Сторінка Продукти */
 ?>
-
-
-<?php get_header(); ?>
-
+<?php get_header() ?>
 
 <div class="catalog-blog">
     <div class="container">
@@ -12,7 +9,7 @@
             <div class="col-3">
                 <div class="sidebar">
                     <ul>
-                        <li><a href="<?php the_permalink(); ?>">Каталоги</a></li>
+                        <li><a href="<?php echo get_the_permalink(117); ?>">Каталоги</a></li>
                         <li><a href="#">Сертификаты</a></li>
                         <li><a href="#">Бренды</a></li>
                         <li><a href="#">Гарантии</a></li>
@@ -51,10 +48,7 @@
                                     <div class="card">
                                         <img src="<?php echo get_sub_field('catalog_img');?>" class="card-img-top" alt="#">
                                         <div class="card-body">
-                                            <?php echo date('Y')?>
-                                            <p class="card-text"> <?php echo get_sub_field('catalog_text');?></p>
-<!--              Тест get_the_permalink. При натисканні виводить пост по id                              -->
-                                            <a href="<?php echo get_the_permalink(11)?>" class="btn btn-primary">Посмотреть каталог</a>
+                                            <p class="card-text d-flex justify-content-center"> <?php echo get_sub_field('catalog_text');?></p>
                                         </div>
                                     </div>
                                 </div>
@@ -74,8 +68,4 @@
     </div>
 </div>
 
-
-
-
-<?php get_footer(); ?>
-
+<?php get_footer() ?>

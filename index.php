@@ -2,29 +2,38 @@
 
 
 <main class="main">
-    <div class="container">
-        <section class="top">
-            <div class="tittle_slide">Первый производитель</div>
-            <div class="subtitle_slide">и поставщик дверной фурнитуры в Украине</div>
-            <div class="text_slide">30 апреля, в нашем фирменном салоне, прошла встреча друзей компании Модус</div>
-            <div class="btn_slide"><a href="#">Смотреть каталог</a></div>
-        </section>
-    </div>
-
-
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-            <div class="swiper-slide" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/slider.png)"></div>
-            <div class="swiper-slide" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/slider.png)"></div>
+
+            <div class="swiper-slide" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/slider.png)">
+                <div class="slide-content">
+                    <section class="top">
+                        <div class="tittle_slide">Первый производитель</div>
+                        <div class="subtitle_slide">и поставщик дверной фурнитуры в Украине</div>
+                        <div class="text_slide">30 апреля, в нашем фирменном салоне, прошла встреча друзей компании Модус</div>
+                        <div class="btn_slide"><a href="#">Смотреть каталог</a></div>
+                    </section>
+                </div>
+            </div>
+
+            <div class="swiper-slide" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/slider.png)">
+                <div class="slide-content">
+                    <section class="top">
+                        <div class="tittle_slide">Второй производитель</div>
+                        <div class="subtitle_slide">новый поставщик в Украине</div>
+                        <div class="text_slide">Другое событие или описание для этого слайда</div>
+                        <div class="btn_slide"><a href="#">Смотреть каталог</a></div>
+                    </section>
+                </div>
+            </div>
         </div>
 
         <div class="swiper_btn">
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
         </div>
-
-
     </div>
+
 
 
     <section class="our-info-block">
@@ -109,7 +118,7 @@
 
                                 <div class="card h-100">
                                     <a href="<?php the_permalink(); ?>">
-                                         <img src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" class="card-img-top" alt="...">
+                                         <img src="<?php echo get_the_post_thumbnail_url(); ?>" class="card-img-top" alt="...">
                                     </a>
                                     <div class="card-body">
                                         <div class="card-body-item">
@@ -155,6 +164,11 @@
             </div>
         </div>
     </section>
+
+    <?php
+    if ( wp_is_mobile() ) : ?>
+            <div>Тест</div>
+    <?php endif; ?>
 </main>
 
 

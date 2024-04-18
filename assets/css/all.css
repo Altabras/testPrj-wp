@@ -308,9 +308,8 @@ a, li, ul {
 .top{
     max-width: 500px;
     display: flex;
+    margin-left: 100px;
     flex-direction: column;
-    position: absolute;
-    z-index: 5;
     line-height: 1;
     margin-top: 146px;
     margin-bottom: 111px;

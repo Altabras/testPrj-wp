@@ -29,36 +29,23 @@
                 <a href="/"><img src=<?php the_field( 'logo_header', 'option'); ?> alt=""></a>
             </div>
             <ul class="nav_list_top">
+
+                <?php
+                if( have_rows('header_info_repeater', 'option') ):
+                    while ( have_rows('header_info_repeater', 'option') ) : the_row(); ?>
                 <li class="nav_item_top">
                     <div class="nav_info_header">
                         <div class="info_header">
-                            <div class="icon-location"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons8-маркер-24.png" alt=""></div>
-                            <span class="nav_info_city">Киев,</span>
-                            <span class="nav_info_city_grey">Офис</span>
-                            <div class="nav_info_number"><a href="">(044) 492-91-91</a></div>
+                            <div class="icon-location"><img src="<?php echo get_sub_field('icon'); ?>" alt=""></div>
+                            <span class="nav_info_city"><?php echo get_sub_field('city'); ?>,</span>
+                            <span class="nav_info_city_grey"><?php echo get_sub_field('location'); ?></span>
+                            <div class="nav_info_number"><a href="#"><?php echo get_sub_field('number'); ?></a></div>
                         </div>
                     </div>
                 </li>
-                <li class="nav_item_top">
-                    <div class="nav_info_header">
-                        <div class="info_header">
-                            <div class="icon-location"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons8-маркер-24.png" alt=""></div>
-                            <span class="nav_info_city">Киев,</span>
-                            <span class="nav_info_city_grey">Салон</span>
-                            <div class="nav_info_number"><a href="">(044) 492-91-91</a></div>
-                        </div>
-                    </div>
-                </li>
-                <li class="nav_item_top">
-                    <div class="nav_info_header">
-                        <div class="info_header">
-                            <div class="icon-location"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons8-маркер-24.png" alt=""></div>
-                            <span class="nav_info_city">Харьков,</span>
-                            <span class="nav_info_city_grey">Салон</span>
-                            <div class="nav_info_number"><a href="">(044) 492-91-91</a></div>
-                        </div>
-                    </div>
-                </li>
+  <?php endwhile;
+                endif;
+                ?>
             </ul>
             <div class="search_icon"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Group%20160.svg" alt=""></a></div>
         </div>
@@ -75,7 +62,7 @@
 
 
             <div class="message_icon">
-                <a href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/inst.svg" alt=""></a>
+                <a href="<?php get_the_permalink( 'instagram.com' );?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/inst.svg" alt=""></a>
                 <a href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/facebook.svg" alt=""></a>
             </div>
         </div>
