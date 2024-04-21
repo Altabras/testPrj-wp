@@ -10,8 +10,8 @@
                 <div class="sidebar">
                     <ul>
                         <li><a href="<?php echo get_the_permalink(117); ?>">Каталоги</a></li>
-                        <li><a href="#">Сертификаты</a></li>
-                        <li><a href="#">Бренды</a></li>
+                        <li><a href="<?php echo get_the_permalink(174); ?>">Сертификаты</a></li>
+                        <li><a href="<?php echo get_the_permalink(171); ?>">Бренды</a></li>
                         <li><a href="#">Гарантии</a></li>
                         <li><a href="#">Видео</a></li>
                     </ul>
@@ -66,6 +66,12 @@
             </div>
         </div>
     </div>
+    <div class="btn-card-block">
+        <a href="">Показать все</a>
+    </div>
 </div>
+
+
+
 
 <?php get_footer() ?>
