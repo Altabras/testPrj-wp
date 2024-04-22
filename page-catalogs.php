@@ -15,7 +15,7 @@
                         <li><a href="<?php echo get_the_permalink(117); ?>">Каталоги</a></li>
                         <li><a href="<?php echo get_the_permalink(174); ?>">Сертификаты</a></li>
                         <li><a href="<?php echo get_the_permalink(171); ?>">Бренды</a></li>
-                        <li><a href="#">Гарантии</a></li>
+                        <li><a href="<?php echo get_the_permalink(203); ?>">Гарантии</a></li>
                         <li><a href="#">Видео</a></li>
                     </ul>
                 </div>

@@ -12,7 +12,7 @@
                         <li><a href="<?php echo get_the_permalink(117); ?>">Каталоги</a></li>
                         <li><a href="<?php echo get_the_permalink(174); ?>">Сертификаты</a></li>
                         <li><a href="<?php echo get_the_permalink(171); ?>">Бренды</a></li>
-                        <li><a href="#">Гарантии</a></li>
+                        <li><a href="<?php echo get_the_permalink(203); ?>">Гарантии</a></li>
                         <li><a href="#">Видео</a></li>
                     </ul>
                 </div>
@@ -35,53 +35,7 @@
                     endwhile;
                 endif;
                 ?>
-                <div class="accordion" id="accordionPanelsStayOpenExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                                Гарантия на замки
-                            </button>
-                        </h2>
-                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-                            <div class="accordion-body">
 
-                                    <div class="row">
-                                        <div class="col">
-                                            <table class="table">
-                                                <thead>
-                                                <tr>
-                                                    <th>Бренд</th>
-                                                    <th>Категория продукции</th>
-                                                    <th>Срок</th>
-                                                    <th>Примечание</th>
-                                                    <th>Тип</th>
-                                                </tr>
-                                                </thead>
-                                                <tbody>
-                                                <tr>
-                                                    <td>Linea Cali</td>
-                                                    <td>Ручки плантунные</td>
-                                                    <td>5 лет</td>
-                                                    <td>На функционирование</td>
-                                                    <td>гг* + гг**</td>
-                                                </tr>
-                                                <!-- Дублирование строк для примера -->
-                                                <tr>
-                                                    <td>Linea Cali</td>
-                                                    <td>Ручки плантунные со спецпокрытием</td>
-                                                    <td>10 лет</td>
-                                                    <td>На покрытие</td>
-                                                    <td>3 года</td>
-                                                </tr>
-                                                <!-- Повторите столько строк, сколько нужно -->
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                        </div>
-                    </div>
-                </div>
 
                 <?php
 
